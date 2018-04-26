@@ -2,12 +2,10 @@ import React from 'react';
 import Side from './side';
 interface OrderEntryProps {
     side: string;
-    changeTitle: (any) => void;
+    changeTitle: (string) => void;
 }
-interface OrderEntryState {
 
-}
-export default class OrderEntry extends React.Component<OrderEntryProps, OrderEntryState> {
+export default class OrderEntry extends React.Component<OrderEntryProps, {}> {
     constructor(props) {
         super(props);
     }

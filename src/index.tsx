@@ -4,7 +4,7 @@ const jQuery = require('jquery');
 import React, { Component } from 'react';
 import { render } from 'react-dom';
 import { Layout } from './components/orderLayout/layout';
-//alert($("#hhead").text());
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const orderbook = document.getElementById('orderbook');
 render(<Layout/>, orderbook);

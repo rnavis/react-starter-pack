@@ -2,10 +2,7 @@ import React from 'react'
 interface SideProps {
     side: string;
 }
-interface SideState {
-
-}
-export default class Side extends React.Component<SideProps, SideState> {
+export default class Side extends React.Component<SideProps, {}> {
     constructor(props) {
         super(props);
     }

@@ -1,13 +1,10 @@
 import React from 'react';
 import OrderEntry from './orderEntry';
-interface Props {
-
-}
 interface State {
     side: string;
 }
-export default class OrderBook extends React.Component<Props, State> {
-    constructor(props) {
+export default class OrderBook extends React.Component<{}, State> {
+    constructor(props:{}) {
         super(props);
         this.state = {side: "Default"};
     }
