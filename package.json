@@ -4,6 +4,8 @@
   "description": "react starter pack",
   "main": "webpack.config.js",
   "dependencies": {
+    "@types/jquery": "^3.3.1",
+    "awesome-typescript-loader": "^3.4.1",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.0",
     "babel-plugin-add-module-exports": "^0.1.2",
@@ -15,12 +17,16 @@
     "babel-preset-stage-0": "^6.3.13",
     "jquery": "^3.3.1",
     "lodash": "^4.17.10",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
     "webpack": "^3.10.0",
+    "typescript": "^2.5.3",
+    "ts-loader": "^3.3.1",
     "webpack-dev-server": "^1.14.1"
   },
   "devDependencies": {
+    "@types/react": "^16.0.18",
+    "@types/react-dom": "^16.0.1",
     "webpack-cli": "^2.0.15"
   },
   "scripts": {

@@ -1,8 +1,15 @@
 import React from 'react';
 import Side from './side';
-export default class OrderEntry extends React.Component {
-    constructor() {
-        super();
+interface OrderEntryProps {
+    side: string;
+    changeTitle: (any) => void;
+}
+interface OrderEntryState {
+
+}
+export default class OrderEntry extends React.Component<OrderEntryProps, OrderEntryState> {
+    constructor(props) {
+        super(props);
     }
     addChange(e) {
         this.props.changeTitle(e.target.value);

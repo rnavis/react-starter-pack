@@ -5,9 +5,19 @@ var path = require('path');
 module.exports = {
     context: path.join(__dirname, "src"),
     devtool: debug ? "inline-sourcemap" : false,
-    entry: "./js/index.js",
+    entry: "./index.tsx",
+    resolve: {
+        extensions: [".js", ".jsx", ".tsx"]
+    },
     module: {
         loaders: [
+            {
+                test: /\.tsx?$/,
+                loader: "awesome-typescript-loader",
+                exclude: [
+                    path.join(__dirname, "node_modules"),
+                ]
+            },
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules|bower_components)/,
@@ -20,7 +30,7 @@ module.exports = {
         ]
     },
     output: {
-        path: __dirname + "/src/js/",
+        path: __dirname + "/src/",
         filename: "index.min.js"
     },
     plugins: debug ? [] : [
