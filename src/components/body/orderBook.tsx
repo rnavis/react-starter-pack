@@ -1,5 +1,6 @@
 import React from 'react';
 import OrderEntry from './orderEntry';
+
 interface State {
     side: string;
 }
